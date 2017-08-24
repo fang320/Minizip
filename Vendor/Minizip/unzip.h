@@ -310,8 +310,8 @@ extern int ZEXPORT unzseek64 OF((unzFile file, ZPOS64_T offset, int origin));
 extern int ZEXPORT unzeof OF((unzFile file));
 /* return 1 if the end of file was reached, 0 elsewhere */
 
-extern int unz_extract_all(unzFile uf, int opt_extract_without_path, int opt_overwrite, const char *password);
-extern int unz_extract_onefile(unzFile uf, const char* filename, int opt_extract_without_path, int opt_overwrite, const char* password);
+extern int ZEXPORT unz_extract_all(unzFile uf, int opt_extract_without_path, int opt_overwrite, const char *password);
+extern int ZEXPORT unz_extract_onefile(unzFile uf, const char* filename, int opt_extract_without_path, int opt_overwrite, const char* password);
 
 /***************************************************************************/
 
