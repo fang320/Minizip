@@ -781,6 +781,13 @@
 				INFOPLIST_FILE = Minizip/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				"MODULEMAP_FILE[sdk=appletvos*]" = "";
+				"MODULEMAP_FILE[sdk=appletvsimulator*]" = "";
+				"MODULEMAP_FILE[sdk=iphoneos*]" = "";
+				"MODULEMAP_FILE[sdk=iphonesimulator*]" = "";
+				"MODULEMAP_FILE[sdk=macosx*]" = "";
+				"MODULEMAP_FILE[sdk=watchos*]" = "";
+				"MODULEMAP_FILE[sdk=watchsimulator*]" = "";
 				PRODUCT_BUNDLE_IDENTIFIER = net.dexman.Minizip;
 				PRODUCT_NAME = Minizip;
 				SKIP_INSTALL = YES;
